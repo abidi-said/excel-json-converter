@@ -1,54 +1,93 @@
-# React + TypeScript + Vite
+# Excel JSON Converter
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Functionalities
 
-Currently, two official plugins are available:
+### Key Features
+- **Excel to JSON**: Convert Excel files (`.xlsx/.xls/.csv`) to JSON
+- **JSON to Excel**: Convert JSON data to Excel files (`.xlsx`)
+- **Multi-Sheet Support**: Support for multiple sheets in Excel files
+- **User-Friendly Interface**: Simple and intuitive interface with file upload and download capabilities
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Example Use Cases
+- Convert Excel files to JSON for use in web applications
+- Convert JSON data to Excel files for use in data analysis
+- Use the application to convert files between different formats
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Getting Started
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### Prerequisites
+- **Node.js**: Version 14 or higher
+- **npm**: Version 6 or higher
+- **Vite**: Version 2 or higher
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Installation
+1. Clone the repository:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+   ```bash
+   git clone https://github.com/your-username/excel-json-converter.git
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+2. Install dependencies
+
+    ```bash
+    nvm use
+    npm install
+
+3. Start the development server:
+
+    ```bash
+    npm run dev
+
+### Building and Testing
+
+1. Build the project
+
+    ```bash
+    npm run build
+
+2. Run tests:
+
+    ```bash
+    npm run test
+
+3. Run end-to-end tests (Cypress):
+
+    ```bash
+    npm run cy:run-e2e
+
+## Features
+
+- **Fast and Efficient Conversion**: Quick and effective conversion of Excel files to JSON and vice versa
+- **User-Friendly Interface**: Easy-to-use interface with file upload and download features
+
+---
+
+## Technical Details
+
+- **Technologies**: Built using react, vitejs, typescript
+
+---
+
+## License
+
+This project is licensed under the [MIT License](LICENSE). See the LICENSE file for details.
+
+---
+
+## Contributing
+
+Contributions are welcome! If you'd like to contribute, please follow these steps:
+
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature-name`)
+3. Commit your changes (`git commit -am 'Add new feature'`)
+4. Push to the branch (`git push origin feature-name`)
+5. Open a Pull Request
+
+---
+
+## Authors
+
+- **Saïd Abidi**  
+  [abidi.said2010@gmail.com](mailto:abidi.said2010@gmail.com)  
